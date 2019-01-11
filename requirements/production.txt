@@ -1,6 +1,6 @@
 # Utils
 python-dateutil==2.6.1
-psycopg2==2.7.6.1
+psycopg2-binary==2.7.6.1
 
 # Django
 django==2.1.5
