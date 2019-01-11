@@ -15,6 +15,9 @@ migrate:
 createsuperuser:
 	docker-compose run backend bash -c "python manage.py createsuperuser"	
 
+startapp:
+	docker-compose run backend bash -c "python manage.py startapp $(app)"	
+
 build-install-modules:
 	docker-compose run frontend sh -c "cd frontend && npm install"
 

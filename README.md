@@ -40,6 +40,10 @@ Contem também um Makefile com comandos básicos .
    
     Executa o comando ```python manage.py createsuperuser``` no container Django
 
+  **make startapp app=seu_novo_app**
+   
+    Executa o comando ```python manage.py startapp seu_novo_app``` no container Django
+
   **make build-install-modules**
    
     Executa o comando ```npm install``` no container Node
