@@ -6,6 +6,15 @@ set_env_production:
 	@rm docker-compose.override.yml || true
 	ln -s docker-compose.production.yml docker-compose.override.yml
 
+makemigrations:
+	docker-compose run backend bash -c "python manage.py makemigrations"	
+
+migrate:
+	docker-compose run backend bash -c "python manage.py migrate"
+
+createsuperuser:
+	docker-compose run backend bash -c "python manage.py createsuperuser"	
+
 build-install-modules:
 	docker-compose run frontend sh -c "cd frontend && npm install"
 

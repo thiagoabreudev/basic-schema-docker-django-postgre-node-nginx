@@ -30,8 +30,6 @@ services:
       - "traefik.docker.network=traefik_webgateway"      
       - "traefik.frontend.rule=Host:legal_shield.com.br,api.legal_shield.com.br"
       - "traefik.enable=true"
-    depends_on:
-      - backend
     networks:
       - gateway
       - default      
